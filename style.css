@@ -87,6 +87,7 @@ body {
 }
 .chan {
   margin: 0;
+  padding-left: 70px;
 }
 
 .proftext {
@@ -128,22 +129,34 @@ body {
 .btnPhnNum {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: start;
   width: 60%;
   font-size: 1.5em;
   margin: 5px;
   background-color: #c1b398;
   padding: 10px;
-  color: white;
+
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
+}
+.phone-icon {
+  color: #f2e5c3;
+}
+.env-color {
+  color: #f2e5c3;
+}
+.phn-nmb {
+  color: white;
+}
+.emailAddress {
+  color: white;
 }
 
 .btnE-mail {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: start;
   width: 60%;
   font-size: 1.5em;
   margin: 5px;
@@ -151,7 +164,7 @@ body {
   padding: 10px;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -200,7 +213,7 @@ body {
 }
 
 .socialTitle {
-  color: white;
+  color: #fff4c9;
   margin: 0;
   font-size: 30px;
   font-weight: 700;
@@ -244,7 +257,7 @@ body {
 }
 
 .addressText {
-  color: white;
+  color: #fff4c9;
   margin: 0;
   font-size: 30px;
   font-weight: 700;
@@ -263,7 +276,7 @@ body {
   position: fixed;
   transform: translateX(-50%, -50%); /* Horizontally center */
   bottom: 0; /* Adjust as needed */
-  padding: 16px 20px;
+  padding: 24px 30px;
   font-size: 1.5em;
   background-color: #c1b398;
   color: white;
@@ -428,11 +441,18 @@ body {
     justify-content: start;
     text-align: start;
   }
+  .socialTitle {
+    font-size: 24px;
+  }
+  .addressText {
+    font-size: 24px;
+  }
   .itemLink {
     font-size: 35px;
     width: 70px;
     height: 70px;
   }
+
   .sticky-button {
     width: 100%;
   }
