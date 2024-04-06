@@ -6,7 +6,15 @@ body {
   margin: auto; /* Center align the body content */
   padding: 0; /* Remove default padding */
   max-width: 1440px; /* Set maximum width for content */
-  background-color: #282828; /* Set background color for the body */
+  background-color: #343434; /* Set background color for the body */
+}
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-font {
+  font-family: "Roboto", sans-serif;
 }
 
 .headerSec {
@@ -68,7 +76,8 @@ body {
 .name {
   color: white;
   margin: 0;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   font-size: 44px;
   font-weight: 700;
   text-align: center;
@@ -125,7 +134,7 @@ body {
   width: 60%;
   font-size: 1.5em;
   margin: 5px;
-  background-color: #b5a381;
+  background-color: #c1b398;
   padding: 10px;
   color: white;
   border: none;
@@ -140,7 +149,7 @@ body {
   width: 60%;
   font-size: 1.5em;
   margin: 5px;
-  background-color: #b5a381;
+  background-color: #c1b398;
   padding: 10px;
   color: white;
   border: none;
@@ -176,8 +185,8 @@ body {
 /* planning */
 .planning {
   margin: 0;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   padding: 0 30px;
   color: white;
 }
@@ -212,6 +221,7 @@ body {
 }
 
 .itemLink {
+  color: black;
   display: flex;
   align-content: center;
   text-align: center;
@@ -242,16 +252,17 @@ body {
 /* sticky-button */
 .sticky-button {
   z-index: 5;
-  width: 100%;
+  width: 1440px;
+
   position: fixed;
   bottom: 0px; /* Adjust as needed */
   padding: 16px 20px;
   font-size: 1.5em;
-  background-color: #b5a381;
+  background-color: #c1b398;
   color: white;
   border: none;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
   cursor: pointer;
 }
 
@@ -297,6 +308,9 @@ body {
     border: 5px solid #2a2826;
     width: 13rem;
   }
+  .sticky-button {
+    width: 100%;
+  }
 }
 
 /* For medium devices (tablets) */
@@ -313,7 +327,11 @@ body {
     margin: 0;
   }
   .name {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .sticky-button {
+    width: 100%;
   }
 }
 
@@ -331,6 +349,9 @@ body {
   }
   .chan {
     margin: 0;
+  }
+  .sticky-button {
+    width: 100%;
   }
 }
 
@@ -351,7 +372,8 @@ body {
     width: 7.8rem;
   }
   .name {
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 12px;
     font-size: 28px;
     font-weight: 700;
     text-align: center;
@@ -383,16 +405,23 @@ body {
     gap: 16px;
     width: 100%;
     font-size: 1.2em;
+    text-align: start;
+    justify-content: start;
   }
 
   .btnE-mail {
     gap: 16px;
     width: 100%;
     font-size: 1.2em;
+    justify-content: start;
+    text-align: start;
   }
   .itemLink {
     font-size: 35px;
     width: 70px;
     height: 70px;
+  }
+  .sticky-button {
+    width: 100%;
   }
 }
