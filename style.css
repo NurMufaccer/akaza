@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box; /* Box-sizing set to border-box for all elements */
+}
+
+body {
+  margin: auto; /* Center align the body content */
+  padding: 0; /* Remove default padding */
+  max-width: 1440px; /* Set maximum width for content */
+  background-color: #282828; /* Set background color for the body */
+}
+
+.headerSec {
+  max-width: 100%; /* Make header section responsive */
+  margin: auto; /* Center align the header section */
+}
+
+.coverpic {
+  position: relative;
+  width: 100%; /* Set width to 100% */
+  height: 70vh; /* Set height to 70% of the viewport height */
+}
+
+.cover {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Stretch the cover to fill its container */
+  background-image: url(./images/coverpic.jpg); /* Set cover image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Stretch the background image to cover the entire container */
+}
+
+.profile {
+  z-index: 2;
+  width: 100%;
+  position: absolute; /* Position profile section absolutely */
+  color: white;
+  left: 50%; /* Align profile section to the center horizontally */
+  bottom: -200px; /* Initially positioned below the container */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.proPic {
+  border-radius: 100%; /* Make the profile picture round */
+  border: 5px solid #2a2826;
+  width: 13rem;
+  overflow: hidden;
+}
+
+/* profile */
+.profContainer {
+  margin-top: 120px;
+}
+
+.profSection {
+  padding: 20px;
+}
+
+.profDiv {
+  display: grid;
+  justify-items: center;
+}
+
+.name {
+  color: white;
+  margin: 0;
+  padding: 30px;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+}
+.profName {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.chan {
+  margin: 0;
+}
+
+.proftext {
+  color: white;
+  margin: 0;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.profLink {
+  margin: 0;
+  padding: 16;
+
+  color: #fff4c9;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.profDescription {
+  color: white;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btnContainer {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.btnPhnNum {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 60%;
+  font-size: 1.5em;
+  margin: 5px;
+  background-color: #b5a381;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btnE-mail {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 60%;
+  font-size: 1.5em;
+  margin: 5px;
+  background-color: #b5a381;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* download */
+.downloadContainer {
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.downloadLink {
+  color: #fff4c9;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+
+.downloadDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.downloadText {
+  margin: 0;
+}
+
+/* planning */
+.planning {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0 30px;
+  color: white;
+}
+
+.planningtext {
+  margin: 0;
+}
+
+/* social */
+.socialContainer {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+.socialTitle {
+  color: white;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.socialLink {
+  margin-top: 20px;
+  max-height: 100px;
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+}
+
+.socialLink::-webkit-scrollbar {
+  width: 0;
+}
+
+.itemLink {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  line-height: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #dbd9d9;
+  margin: 0 3px 3px 0;
+}
+
+/* address */
+.addressContainer {
+  margin-top: 30px;
+  margin-bottom: 170px;
+  padding: 0 30px;
+}
+
+.addressText {
+  color: white;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* sticky-button */
+.sticky-button {
+  z-index: 5;
+  width: 100%;
+  position: fixed;
+  bottom: 0px; /* Adjust as needed */
+  padding: 16px 20px;
+  font-size: 1.5em;
+  background-color: #b5a381;
+  color: white;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.sticky-button:hover {
+  transform: rotate(-0deg) scale(1);
+  animation: pulse 1.5s ease-in-out;
+}
+@keyframes pulse {
+  0% {
+    transform: rotate(-0deg) scale(1);
+    opacity: 0;
+  }
+  /* 10% { 
+      transform: rotate(-0deg) scale(1.3); 
+  }  */
+  20% {
+    transform: rotate(-0deg) scale(0.95);
+  }
+  /* 30% { 
+      transform: rotate(-0deg) scale(1.2); 
+  }  */
+  /* 40% { 
+      transform: rotate(-0deg) scale(0.9); 
+  } */
+  50% {
+    transform: rotate(-0deg) scale(1.2);
+    opacity: 1;
+  } /* 
+  60% { 
+      transform: rotate(-0deg) scale(0.95); 
+  } 
+  70% { 
+      transform: rotate(-0deg) scale(1); 
+  } */
+  100% {
+    transform: rotate(-0deg) scale(1);
+    opacity: 1;
+  }
+}
+/* For large devices (desktops and laptops) */
+@media only screen and (min-width: 1200px) {
+  .proPic {
+    border: 5px solid #2a2826;
+    width: 13rem;
+  }
+}
+
+/* For medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .profile {
+    bottom: -160px; /* Initially positioned below the container */
+  }
+
+  .proPic {
+    border: 4px solid #2a2826;
+    width: 10rem;
+  }
+  .chan {
+    margin: 0;
+  }
+  .name {
+    padding: 10px;
+  }
+}
+
+/* For small devices (landscape phones) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile {
+    bottom: -150px; /* Initially positioned below the container */
+  }
+  .profContainer {
+    margin-top: 0px;
+  }
+  .proPic {
+    border: 4px solid #2a2826;
+    width: 9rem;
+  }
+  .chan {
+    margin: 0;
+  }
+}
+
+/* For extra small devices (portrait phones) */
+@media only screen and (max-width: 575px) {
+  .profile {
+    bottom: -130px; /* Initially positioned below the container */
+  }
+  .profContainer {
+    margin-top: 0px;
+  }
+  .chan {
+    margin: 0;
+  }
+
+  .proPic {
+    border: 3px solid #2a2826;
+    width: 7.8rem;
+  }
+  .name {
+    padding: 5px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .profName {
+    gap: 12px;
+  }
+  .profContainer {
+    margin-top: 70px;
+  }
+  .proftext {
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .profLink {
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .profDescription {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .btnPhnNum {
+    gap: 16px;
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .btnE-mail {
+    gap: 16px;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .itemLink {
+    font-size: 35px;
+    width: 70px;
+    height: 70px;
+  }
+}
