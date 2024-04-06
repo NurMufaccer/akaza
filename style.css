@@ -8,10 +8,8 @@ body {
   max-width: 1440px; /* Set maximum width for content */
   background-color: #343434; /* Set background color for the body */
 }
-.great-vibes-regular {
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: normal;
+.dancing-script-font {
+  font-family: "Dancing Script", cursive;
 }
 .roboto-font {
   font-family: "Roboto", sans-serif;
@@ -268,7 +266,7 @@ body {
 
 .sticky-button:hover {
   transform: rotate(-0deg) scale(1);
-  animation: pulse 1.5s ease-in-out;
+  animation: pulse 1s ease-in-out;
 }
 @keyframes pulse {
   0% {
